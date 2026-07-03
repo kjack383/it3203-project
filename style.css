@@ -1,5 +1,5 @@
 /* =========================
-   1. ELEMENT SELECTORS
+   GLOBAL ELEMENT SELECTORS
 ========================= */
 
 body {
@@ -10,27 +10,51 @@ body {
     color: #333;
 }
 
+/* Main headings */
 h1 {
     text-align: center;
     color: #1f3c88;
-    margin-top: 80px;
+    margin-top: 90px;
+    font-size: 32px;
 }
 
 h2 {
     color: #2c3e50;
-    margin-left: 20px;
+    margin-bottom: 10px;
 }
 
 p {
-    padding: 10px 20px;
+    padding: 10px 15px;
     line-height: 1.6;
 }
 
 /* =========================
-   2. CLASS SELECTORS
+   NAVIGATION BAR
 ========================= */
 
-.container {
+.w3-bar {
+    font-weight: bold;
+}
+
+/* LINKS + HOVER EFFECT (REQUIRED) */
+a {
+    text-decoration: none;
+    padding: 10px 12px;
+    color: #1f3c88;
+    transition: 0.3s;
+}
+
+a:hover {
+    background-color: #1f3c88;
+    color: white;
+    border-radius: 6px;
+}
+
+/* =========================
+   FLEXBOX LAYOUT (REQUIRED)
+========================= */
+
+.flex-section {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -38,72 +62,66 @@ p {
     padding: 20px;
 }
 
+/* CARD DESIGN FOR CONTENT */
 .card {
     background-color: white;
     border: 2px solid #ddd;
     border-radius: 10px;
-    padding: 15px;
     width: 300px;
-    box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+    padding: 15px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+}
+
+/* hover effect on cards */
+.card:hover {
+    transform: scale(1.03);
 }
 
 /* =========================
-   3. ID SELECTOR
+   IMAGES
+========================= */
+
+img {
+    width: 100%;
+    border-radius: 8px;
+    border: 2px solid #ccc;
+    margin-top: 10px;
+}
+
+/* =========================
+   ID SELECTOR (REQUIRED)
 ========================= */
 
 #main-title {
     color: darkblue;
-    font-size: 40px;
+    font-size: 38px;
+    text-align: center;
 }
 
 /* =========================
-   4. NAVIGATION BAR
+   LIST STYLING
 ========================= */
 
-.w3-bar {
-    font-weight: bold;
-}
-
-/* =========================
-   5. HOVER EFFECT (REQUIRED)
-========================= */
-
-a {
-    text-decoration: none;
-    padding: 10px;
-    color: #1f3c88;
-}
-
-a:hover {
-    color: white;
-    background-color: #1f3c88;
-    border-radius: 5px;
-}
-
-/* =========================
-   6. IMAGES
-========================= */
-
-img {
-    border: 3px solid #ccc;
-    margin: 10px 0;
-    border-radius: 8px;
-}
-
-/* =========================
-   7. LAYOUT (FLEXBOX REQUIRED)
-========================= */
-
-.flex-section {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    gap: 20px;
+ul {
     padding: 20px;
+    line-height: 1.8;
 }
 
 /* =========================
-   8. TABLE STYLING
+   FOOTER
+========================= */
+
+footer {
+    margin-top: 40px;
+    background-color: #eaeaea;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+}
+
+/* =========================
+   TABLE (if used later)
 ========================= */
 
 table {
@@ -112,27 +130,12 @@ table {
     border-collapse: collapse;
 }
 
-table, th, td {
+th, td {
     border: 1px solid #999;
+    padding: 10px;
 }
 
 th {
     background-color: #1f3c88;
     color: white;
-    padding: 10px;
-}
-
-td {
-    padding: 10px;
-}
-
-/* =========================
-   9. FOOTER
-========================= */
-
-footer {
-    margin-top: 40px;
-    background-color: #eaeaea;
-    text-align: center;
-    padding: 20px;
 }
