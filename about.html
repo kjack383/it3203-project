@@ -2,12 +2,14 @@
 <html>
 <head>
 <title>About</title>
+
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
 <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
+<!-- NAVIGATION -->
 <div class="w3-bar w3-white w3-card w3-top">
 <a href="index.html">Home</a>
 <a href="history.html">History</a>
@@ -17,16 +19,50 @@
 <a href="about.html">About</a>
 </div>
 
-<h1>About Me</h1>
+<h1 id="main-title">About Me & This Project</h1>
 
-<p>
-My name is Kimora Jackson. I am an Information Technology student at Kennesaw State University
- with a concentration in enterprise systems .
-</p>
+<!-- FLEX LAYOUT -->
+<div class="flex-section">
 
-<p>
-This project demonstrates the evolution of the Internet and core web technologies.
-</p>
+    <div class="card">
+
+        <!-- OPTIONAL IMAGE (you can keep or remove) -->
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" style="width:100%">
+
+        <h2>Student Information</h2>
+
+        <p>
+            My name is Kimora Jackson. I am an Information Technology student at Kennesaw State University.
+        </p>
+
+        <p>
+            I am interested in web development, networking systems, and enterprise technology.
+        </p>
+
+    </div>
+
+    <div class="card">
+
+        <h2>About This Project</h2>
+
+        <p>
+            This website was created for IT 3203 Web Development. It demonstrates the evolution of the Internet,
+            key technologies, and foundational web concepts.
+        </p>
+
+        <p>
+            The project uses HTML, CSS, Flexbox layout, and multiple web pages connected through navigation.
+        </p>
+
+    </div>
+
+</div>
+
+<!-- FOOTER -->
+<footer>
+<p>This is a class project for IT3203</p>
+<p><a href="https://ksuweb.github.io/IT3203/">Course Website</a></p>
+</footer>
 
 </body>
 </html>
