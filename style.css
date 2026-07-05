@@ -139,47 +139,128 @@ th {
     background-color: #1f3c88;
     color: white;
 }
-.hero{
-    background-image:url("https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1600&q=80");
-    height:500px;
+/* =========================
+   HERO SECTION
+========================= */
 
-    background-size:cover;
-    background-position:center;
+.hero {
+    background-image: url("https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1600&q=80");
+    background-size: cover;
+    background-position: center;
+    height: 500px;
 
-    display:flex;
-    justify-content:center;
-    align-items:center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+}
+
+.hero-text {
+    background-color: rgba(0, 0, 0, 0.55);
+    color: white;
+
+    padding: 30px;
+    border-radius: 10px;
+
+    max-width: 700px;
+}
+
+.hero-text p {
+    color: white;
+}
+
+.hero-button {
+    display: inline-block;
+    margin-top: 20px;
+
+    background-color: #1f3c88;
+    color: white;
+
+    padding: 12px 25px;
+
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+.hero-button:hover {
+    background-color: #3d5ea8;
+}
+.card {
+    background-color: white;
+
+    border: 2px solid #ddd;
+    border-radius: 10px;
+
+    width: 300px;
+
+    padding: 20px;
+
+    box-shadow: 0px 3px 8px rgba(0,0,0,.15);
+
+    transition: transform .2s ease;
+}
+
+.card:hover{
+    transform: translateY(-5px);
+}.card {
+    background-color: white;
+
+    border: 2px solid #ddd;
+    border-radius: 10px;
+
+    width: 300px;
+
+    padding: 20px;
+
+    box-shadow: 0px 3px 8px rgba(0,0,0,.15);
+
+    transition: transform .2s ease;
+}
+
+.card:hover{
+    transform: translateY(-5px);
+}
+img{
+    width:100%;
+
+    border-radius:10px;
+
+    border:2px solid #ccc;
+
+    margin-top:15px;
+}
+h1{
+    color:#1f3c88;
+    text-align:center;
+}
+
+h2{
+    color:#1f3c88;
+}
+.w3-bar .w3-button{
+    transition:0.3s;
+}
+
+.w3-bar .w3-button:hover{
+    background-color:#1f3c88 !important;
+    color:white !important;
+}
+table{
+    margin:auto;
+    width:90%;
+}
+
+th{
+    background-color:#1f3c88;
+    color:white;
+}
+footer{
+    background-color:#efefef;
 
     text-align:center;
 
-    color:white;
-}
+    padding:25px;
 
-.hero-text{
-    background:rgba(0,0,0,.55);
-    padding:40px;
-    border-radius:15px;
-}
-
-.hero-button{
-
-    display:inline-block;
-
-    margin-top:20px;
-
-    background:#2196F3;
-
-    color:white;
-
-    padding:15px 35px;
-
-    border-radius:8px;
-
-    font-weight:bold;
-}
-
-.hero-button:hover{
-
-    background:#1565C0;
-
+    margin-top:40px;
 }
