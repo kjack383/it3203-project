@@ -1,7 +1,6 @@
-images/
-│── internet.jpg
-│── arpanet.jpg
-│── tcpip.jpg
-│── www.jpg
-│── htmlcss.jpg
-│── cloud.jpg
+images
+├── internet.jpg
+├── arpanet.jpg
+├── tcpip.jpg
+├── www.jpg
+└── htmlcss.jpg
