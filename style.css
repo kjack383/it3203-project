@@ -146,17 +146,30 @@ a{
    IMAGES
 ========================= */
 
+/* =========================
+   IMAGES
+========================= */
+
 img{
-    width:100%;
+    max-width:100%;
     border-radius:8px;
     border:2px solid #ccc;
     margin-top:10px;
 }
 
-.tech-image{
+.card img{
     width:250px;
     height:160px;
     object-fit:cover;
+    display:block;
+    margin:15px auto;
+}
+
+
+.tech-image{
+    width:250px;
+    height:160px;
+    object-fit:contain;
     display:block;
     margin:15px auto;
 }
