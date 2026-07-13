@@ -170,7 +170,9 @@ img{
     margin-top:10px;
 }
 
-.card img{
+
+/* History page images */
+.history-image{
     width:250px;
     height:160px;
     object-fit:cover;
@@ -179,9 +181,20 @@ img{
 }
 
 
+/* Technologies page image */
 .tech-image{
-    width:250px;
-    height:160px;
+    width:500px;
+    height:auto;
+    object-fit:contain;
+    display:block;
+    margin:20px auto;
+}
+
+
+/* About page image */
+.about-image{
+    width:300px;
+    height:auto;
     object-fit:contain;
     display:block;
     margin:15px auto;
