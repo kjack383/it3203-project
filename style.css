@@ -220,7 +220,74 @@ th{
     background:#1f3c88;
     color:white;
 }
+.quiz-container{
 
+max-width:900px;
+margin:auto;
+padding:20px;
+
+}
+
+
+.quiz-card{
+
+background:white;
+border-radius:10px;
+padding:20px;
+margin:20px 0;
+box-shadow:0 3px 8px rgba(0,0,0,.15);
+
+}
+
+
+.quiz-card input[type="text"]{
+
+width:100%;
+padding:10px;
+
+}
+
+
+.correct{
+
+color:green;
+font-weight:bold;
+
+}
+
+
+.incorrect{
+
+color:red;
+font-weight:bold;
+
+}
+
+
+.pass{
+
+color:green;
+
+}
+
+
+.fail{
+
+color:red;
+
+}
+
+
+.reset-button{
+
+margin:20px;
+padding:12px 24px;
+background:#555;
+color:white;
+border:none;
+border-radius:6px;
+
+}
 
 /* =========================
    FOOTER
