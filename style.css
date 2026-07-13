@@ -96,7 +96,8 @@ a{
 }
 
 .hero-text p{
-    color:white;
+    color:#333;
+
 }
 
 .hero-button{
@@ -199,7 +200,9 @@ footer{
    TITLE BOX (HOME PAGE ONLY)
 ========================= */
 
-#main-title{
+.hero-title{
     font-size:40px;
     color:#1f3c88;
+    font-weight:bold;
+}
 }
