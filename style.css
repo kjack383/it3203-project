@@ -14,7 +14,7 @@ body{
     font-family:Arial, sans-serif;
     background:#f4f6f9;
     color:#333;
-    padding-top:70px;
+    padding-top:80px;
 }
 
 main{
@@ -30,10 +30,12 @@ h1{
     text-align:center;
     color:#1f3c88;
     margin-top:20px;
+    font-weight:bold;
 }
 
-h2{
+h2, h3{
     color:#1f3c88;
+    font-weight:bold;
 }
 
 p{
@@ -47,12 +49,12 @@ p{
 
 .w3-bar{
     font-weight:bold;
-    padding:8px 0;
+    padding:10px 0;
     z-index:1000;
 }
 
 .w3-bar .w3-button{
-    transition:.3s;
+    transition:0.3s;
 }
 
 .w3-bar .w3-button:hover{
@@ -70,9 +72,13 @@ a{
     text-decoration:none;
 }
 
+a:hover{
+    color:#3d5ea8;
+}
+
 
 /* =========================
-   HERO
+   HERO SECTION
 ========================= */
 
 .hero{
@@ -87,8 +93,8 @@ a{
 }
 
 .hero-text{
-    background:rgba(0,0,0,.55);
-    color:white;
+    background:rgba(255,255,255,0.90);
+    color:#333;
     padding:30px;
     border-radius:10px;
     max-width:700px;
@@ -97,8 +103,14 @@ a{
 
 .hero-text p{
     color:#333;
-
 }
+
+.hero-title{
+    font-size:40px;
+    color:#1f3c88;
+    font-weight:bold;
+}
+
 
 .hero-button{
     display:inline-block;
@@ -107,6 +119,11 @@ a{
     background:#1f3c88;
     color:white;
     border-radius:6px;
+}
+
+.hero-button:hover{
+    background:#3d5ea8;
+    color:white;
 }
 
 
@@ -141,10 +158,6 @@ a{
     transform:translateY(-5px);
 }
 
-
-/* =========================
-   IMAGES
-========================= */
 
 /* =========================
    IMAGES
@@ -185,7 +198,7 @@ table{
     border-collapse:collapse;
 }
 
-th,td{
+th, td{
     border:1px solid #999;
     padding:10px;
 }
@@ -206,16 +219,4 @@ footer{
     text-align:center;
     background:#efefef;
     border-top:2px solid #ccc;
-}
-
-
-/* =========================
-   TITLE BOX (HOME PAGE ONLY)
-========================= */
-
-.hero-title{
-    font-size:40px;
-    color:#1f3c88;
-    font-weight:bold;
-}
 }
