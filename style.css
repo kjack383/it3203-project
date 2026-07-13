@@ -14,11 +14,12 @@ body{
     font-family:Arial, sans-serif;
     background:#f4f6f9;
     color:#333;
+    padding-top:70px;
 }
 
 main{
     flex:1;
-    margin-top:80px;
+    margin-top:0;
 }
 
 /* =========================
