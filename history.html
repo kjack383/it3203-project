@@ -3,137 +3,91 @@
 
 <head>
     <title>History of the Internet</title>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<!-- Navigation -->
-<div class="w3-bar w3-blue w3-card">
+    <!-- CLEANED NAVIGATION BAR (Matches index.html) -->
+    <nav class="w3-bar w3-card">
+        <a href="index.html" class="w3-button">Home</a>
+        <a href="history.html" class="w3-button">History</a>
+        <a href="technologies.html" class="w3-button">Technologies</a>
+        <a href="concepts.html" class="w3-button">Concepts</a>
+        <a href="references.html" class="w3-button">References</a>
+        <a href="about.html" class="w3-button">About</a>
+        <a href="quiz.html" class="w3-button">Quiz</a>
+    </nav>
 
-    <a href="index.html" class="w3-bar-item w3-button">Home</a>
-    <a href="history.html" class="w3-bar-item w3-button">History</a>
-    <a href="technologies.html" class="w3-bar-item w3-button">Technologies</a>
-    <a href="concepts.html" class="w3-bar-item w3-button">Concepts</a>
-    <a href="references.html" class="w3-bar-item w3-button">References</a>
-    <a href="about.html" class="w3-bar-item w3-button">About</a>
-    <a href="quiz.html" class="w3-bar-item w3-button">Quiz</a>
+    <main>
+        <h1>History of the Internet</h1>
 
-</div>
+        <p class="page-intro" style="text-align: center;">
+            The Internet has evolved over several decades into the global network we use
+            today. Beginning as a small government research project, it has grown into a
+            worldwide system connecting billions of people for communication, education,
+            business, entertainment, and information sharing.
+        </p>
 
+        <div class="flex-section">
+            <!-- ARPANET -->
+            <div class="card">
+                <h2>ARPANET (1969)</h2>
+                <img src="images/arpanet.jpg" alt="ARPANET">
+                <p>
+                    ARPANET was created by the U.S. Department of Defense as one of the first
+                    packet-switching computer networks. It connected universities and research
+                    institutions and became the foundation of today's Internet.
+                </p>
+            </div>
 
-<main>
+            <!-- TCP/IP -->
+            <div class="card">
+                <h2>TCP/IP (1983)</h2>
+                <img src="images/tcpip.png" alt="TCP/IP">
+                <p>
+                    In 1983, TCP/IP became the standard communication protocol for networks.
+                    It allowed different computer networks to connect and communicate,
+                    creating the foundation for the modern Internet.
+                </p>
+            </div>
 
-<h1>History of the Internet</h1>
+            <!-- WORLD WIDE WEB -->
+            <div class="card">
+                <h2>World Wide Web (1989)</h2>
+                <img src="images/www.jpg" alt="World Wide Web">
+                <p>
+                    Tim Berners-Lee introduced the World Wide Web in 1989. The Web made the
+                    Internet easier to access through browsers, websites, and hyperlinks,
+                    allowing millions of people to access information online.
+                </p>
+            </div>
+        </div>
 
-<p class="page-intro">
-The Internet has evolved over several decades into the global network we use
-today. Beginning as a small government research project, it has grown into a
-worldwide system connecting billions of people for communication, education,
-business, entertainment, and information sharing.
-</p>
+        <h2 style="text-align:center;">
+            Why the Internet Changed the World
+        </h2>
 
+        <p class="page-text" style="text-align: center;">
+            Today the Internet supports online education, banking, shopping, social media,
+            cloud computing, streaming services, and communication around the globe.
+            Continuous improvements in networking technology have made the Internet faster,
+            more reliable, and accessible to billions of users every day.
+        </p>
+    </main>
 
-<div class="flex-section">
-
-
-<!-- ARPANET -->
-
-<div class="card">
-
-<h2>ARPANET (1969)</h2>
-
-<img src="images/arpanet.jpg" alt="ARPANET">
-
-<p>
-ARPANET was created by the U.S. Department of Defense as one of the first
-packet-switching computer networks. It connected universities and research
-institutions and became the foundation of today's Internet.
-</p>
-
-</div>
-
-
-
-<!-- TCP/IP -->
-
-<div class="card">
-
-<h2>TCP/IP (1983)</h2>
-
-<img src="images/tcpip.png" alt="TCP/IP">
-
-<p>
-In 1983, TCP/IP became the standard communication protocol for networks.
-It allowed different computer networks to connect and communicate,
-creating the foundation for the modern Internet.
-</p>
-
-</div>
-
-
-
-<!-- WORLD WIDE WEB -->
-
-<div class="card">
-
-<h2>World Wide Web (1989)</h2>
-
-<img src="images/www.jpg" alt="World Wide Web">
-
-<p>
-Tim Berners-Lee introduced the World Wide Web in 1989. The Web made the
-Internet easier to access through browsers, websites, and hyperlinks,
-allowing millions of people to access information online.
-</p>
-
-</div>
-
-
-</div>
-
-
-
-<h2 style="text-align:center;">
-Why the Internet Changed the World
-</h2>
-
-
-<p class="page-text">
-Today the Internet supports online education, banking, shopping, social media,
-cloud computing, streaming services, and communication around the globe.
-Continuous improvements in networking technology have made the Internet faster,
-more reliable, and accessible to billions of users every day.
-</p>
-
-
-</main>
-
-
-<footer>
-
-<p>
-<strong>IT 3203 Web Development Project</strong>
-</p>
-
-<p>
-This website was created as a class project for IT 3203 at Kennesaw State University.
-</p>
-
-<p>
-<a href="https://ksuweb.github.io/IT3203/" target="_blank">
-IT 3203 Course Website
-</a>
-</p>
-
-</footer>
-
+    <footer>
+        <p><strong>IT 3203 Web Development Project</strong></p>
+        <p>This website was created as a class project for IT 3203 at Kennesaw State University.</p>
+        <p>
+            <a href="https://ksuweb.github.io/IT3203/" target="_blank">
+                IT 3203 Course Website
+            </a>
+        </p>
+    </footer>
 
 </body>
-
 </html>
