@@ -22,10 +22,9 @@ html, body {
 }
 
 main {
-    flex: 1;
-    padding: 10px; /* Padding for mobile edges */
+    margin-top: 15px;
+    padding: 10px;
 }
-
 /* Headings & Text */
 h1 {
     text-align: center;
@@ -47,17 +46,21 @@ p {
 /* ==========================================
    ELEMENT 1: SITE MENU (Responsive Navigation)
    ========================================== */
-.w3-bar {
+    .w3-bar {
     position: sticky;
     top: 0;
+    left: 0;
     width: 100%;
-    background: #2196F3; /* Same blue as W3.CSS */
-    font-weight: bold;
-    padding: 5px 0;
+    background-color: #2196F3;
     z-index: 1000;
+
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    font-weight: bold;
+    padding: 0;
+
 }
 .w3-bar .w3-button {
     width: 100%; /* Easy-to-tap full-width links on mobile */
@@ -285,11 +288,14 @@ footer {
     }
 
     /* Horizontal navigation */
-    .w3-bar{
-        flex-direction:row;
-        justify-content:center;
-        flex-wrap:wrap;
-        padding:0;
+   .w3-bar{
+    position: sticky;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
     }
 
     .w3-bar .w3-button{
