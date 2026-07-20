@@ -1,876 +1,281 @@
 /* ==========================================================
-   IT 3203 Milestone #3
-   Responsive and Mobile Web Design Stylesheet
-   Mobile-First Design Approach
+   IT 3203 Milestone #3 - Master Stylesheet
+   Responsive and Mobile-First Design Approach
    ========================================================== */
 
-
-/* ==========================================================
-   GLOBAL RESET AND BASE STYLES
-   ========================================================== */
-
-/* Apply consistent sizing to all elements */
 * {
     box-sizing: border-box;
 }
 
-/* Allow full-height flexible page layout */
-html,
-body {
+html, body {
     height: 100%;
 }
 
-
-/* Main page styling */
-/* Main page styling */
 body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-
     margin: 0;
-
     font-family: Arial, Helvetica, sans-serif;
-
     background-color: #f4f6f9;
     color: #333;
-
     line-height: 1.6;
-    
-    /* ADD THIS LINE BELOW to push the page content down past the fixed navigation menu */
-    padding-top: 80px; 
 }
-
-/* ==========================================================
-   PAGE CONTENT LAYOUT
-   ========================================================== */
 
 main {
     width: 100%;
     max-width: 1200px;
-
     margin: 15px auto;
     padding: 15px;
+    flex: 1; /* Pushes the footer to the bottom */
 }
 
-
-/* Headings */
 h1 {
     text-align: center;
-
     color: #1f3c88;
-
     margin-top: 20px;
-
     font-weight: bold;
-
-    /* Responsive font size */
     font-size: clamp(24px, 5vw, 36px);
 }
 
-
-h2,
-h3 {
+h2, h3 {
     color: #1f3c88;
     font-weight: bold;
 }
-
-
-p {
-    line-height: 1.6;
-}
-
-
-/* ==========================================================
-   LINKS AND ACCESSIBILITY
-   ========================================================== */
 
 a {
     color: #1f3c88;
-
     text-decoration: none;
-
     transition: color 0.3s ease;
 }
 
-
-a:hover,
-a:focus {
+a:hover, a:focus {
     color: #3d5ea8;
-
     text-decoration: underline;
 }
 
-
 /* ==========================================================
-   ELEMENT 1: RESPONSIVE SITE MENU
-   Mobile Navigation
+   NAVIGATION MENU (Fixed and Restored)
    ========================================================== */
-
 .w3-bar {
-    position: sticky;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
-
     display: flex;
-    flex-direction: column;
-    align-items: stretch;
-
-    /* CHANGE THIS: Force a visible background color */
+    flex-direction: column; /* Mobile first: stacked */
     background-color: #1f3c88 !important; 
-    font-weight: bold;
+    width: 100%;
 }
 
-/* Navigation buttons */
 .w3-bar .w3-button {
-    width: 100%;
     text-align: center;
     padding: 14px 10px;
-    
-    /* Keep this white so it stands out against the dark blue background */
     color: white !important; 
-
-    transition:
-        background-color 0.3s ease,
-        color 0.3s ease;
+    font-weight: bold;
+    display: block; /* Ensures hitboxes fill the screen */
+    transition: background-color 0.3s ease;
 }
-/* Hover and keyboard accessibility */
+
 .w3-bar .w3-button:hover,
 .w3-bar .w3-button:focus {
-
-    background-color: #1f3c88 !important;
-
-    color: white !important;
-
+    background-color: #3d5ea8 !important;
 }
+
 /* ==========================================================
    HERO SECTION
    ========================================================== */
-
-
 .hero {
-
     background-image: url("images/internet.jpg");
-
-
     background-size: cover;
-
     background-position: center;
-
-
     min-height: 40vh;
-
-
     display: flex;
-
     justify-content: center;
-
     align-items: center;
-
-
     padding: 20px;
-
 }
-/* Hero text box */
 
 .hero-text {
-
     width: 100%;
-
     max-width: 700px;
-
-
-    background-color: rgba(255,255,255,0.90);
-
-
+    background-color: rgba(255,255,255,0.95);
     color: #333;
-
-
     padding: 25px;
-
-
     border-radius: 12px;
-
-
     text-align: center;
-
-
-    box-shadow:
-        0 4px 12px rgba(0,0,0,0.15);
-
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
 }
-/* Hero heading */
 
 .hero-title {
-
     color: #1f3c88;
-
-
     font-weight: bold;
-
-
     font-size: clamp(28px, 6vw, 48px);
-
 }
-/* Hero button */
 
 .hero-button {
-
     display: inline-block;
-
-
     margin-top: 15px;
-
-
     padding: 14px 25px;
-
-
-    min-height: 48px;
-
-
     background-color: #1f3c88;
-
-
     color: white;
-
-
     border-radius: 6px;
-
-
-    text-decoration: none;
-
-
     cursor: pointer;
-
-
-    transition:
-        background-color 0.3s ease,
-        transform 0.2s ease;
-
+    transition: background-color 0.3s ease, transform 0.2s ease;
 }
-.hero-button:hover,
-.hero-button:focus {
 
+.hero-button:hover, .hero-button:focus {
     background-color: #17306e;
-
-
     transform: translateY(-2px);
-
+    color: white;
+    text-decoration: none;
 }
+
 /* ==========================================================
-   FLEXBOX CARD SECTIONS
+   CONTENT CARDS & IMAGES
    ========================================================== */
-
-
-/* Responsive card container */
 .flex-section {
-
     display: flex;
-
     justify-content: center;
-
     flex-wrap: wrap;
-
-
     gap: 20px;
-
-
     padding: 20px 0;
-
 }
-/* Individual content cards */
 
 .card {
-
     width: 100%;
-
-
     max-width: 340px;
-
-
     flex: 1 1 280px;
-
-
     background-color: white;
-
-
     border: 2px solid #ddd;
-
-
     border-radius: 10px;
-
-
     padding: 20px;
-
-
-    box-shadow:
-        0 4px 12px rgba(0,0,0,0.1);
-
-
-    transition:
-        transform 0.3s ease;
-
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
 }
+
 .card:hover {
-
     transform: translateY(-5px);
-
 }
 
-
-
-/* ==========================================================
-   ELEMENT 3: RESPONSIVE IMAGES
-   ========================================================== */
-img {
-
+img, .history-image, .tech-image, .about-image {
     max-width: 100%;
-
-
     height: auto;
-
-
     display: block;
-
-
     border-radius: 8px;
-
-
     border: 2px solid #ccc;
-
-
-    margin: 10px auto;
-
-}
-/* All article images */
-
-.history-image,
-.tech-image,
-.about-image {
-
-    width: 100%;
-
-
-    max-width: 500px;
-
-
-    height: auto;
-
-
-    display: block;
-
-
     margin: 20px auto;
-
-}
-/* ==========================================================
-   RESPONSIVE TABLES
-   ========================================================== */
-/*
-   Wrapper allows horizontal scrolling
-   on small phone screens
-*/
-
-.table-container {
-
-    width: 100%;
-
-
-    overflow-x: auto;
-
-
-    -webkit-overflow-scrolling: touch;
-
-
-    margin: 20px 0;
-
-}
-
-table {
-
-    width: 100%;
-
-
-    min-width: 500px;
-
-
-    border-collapse: collapse;
-
-}
-
-th,
-td {
-
-    border: 1px solid #999;
-
-
-    padding: 10px;
-
-
-    text-align: left;
-
-}
-
-th {
-
-    background-color: #1f3c88;
-
-
-    color: white;
-
 }
 
 /* ==========================================================
-   ELEMENT 4: QUIZ FORM DESIGN
+   QUIZ FORM STYLES
    ========================================================== */
-
-
-
 .quiz-container {
-
     width: 100%;
-
-
     max-width: 900px;
-
-
     margin: auto;
-
-
-    padding: 15px;
-
 }
+
 .quiz-card {
-
     background-color: white;
-
-
     border-radius: 10px;
-
-
     padding: 20px;
-
-
     margin: 20px 0;
-
-
-    box-shadow:
-        0 4px 12px rgba(0,0,0,0.1);
-
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
-
-
-
-/* Quiz input fields */
 
 .quiz-card input[type="text"] {
-
-
     width: 100%;
-
-
     padding: 12px;
-
-
     font-size: 16px;
-
-
     border: 1px solid #ccc;
-
-
     border-radius: 5px;
-
-
     margin-top: 10px;
-
 }
-
-/* Quiz labels */
 
 .quiz-card label {
-
-
     display: flex;
-
-
     align-items: center;
-
-
     gap: 10px;
-
-
     padding: 12px;
-
-
     margin: 8px 0;
-
-
     background-color: #f9f9f9;
-
-
     border-radius: 5px;
-
-
     border: 1px solid #eee;
-
-
     cursor: pointer;
-
 }
-
-
-
-/* Larger touch targets */
 
 .quiz-card input[type="radio"],
 .quiz-card input[type="checkbox"] {
-
-
     transform: scale(1.2);
-
-
 }
-/* ==========================================================
-   QUIZ BUTTONS
-   ========================================================== */
+
 .form-actions {
-
-
     display: flex;
-
-
     flex-direction: column;
-
-
     gap: 15px;
-
-
     margin-top: 20px;
-
 }
-
-
 
 .form-actions button {
-
-
     width: 100%;
-
-
     min-height: 48px;
-
-
     font-size: 16px;
-
-
 }
-
-/* Results */
-
-.correct {
-
-    color: green;
-
-    font-weight: bold;
-
-}
-
-
-
-.incorrect {
-
-    color: red;
-
-    font-weight: bold;
-
-}
-
-
-
-.pass {
-
-    color: green;
-
-}
-
-
-
-.fail {
-
-    color: red;
-
-}
-
-
-
-/* Reset button */
 
 .reset-button {
-
-
     padding: 14px 25px;
-
-
     background-color: #555;
-
-
     color: white;
-
-
     border: none;
-
-
     border-radius: 6px;
-
-
     cursor: pointer;
-
-
-    transition:
-        background-color 0.3s ease;
-
+    transition: background-color 0.3s ease;
 }
 
-.reset-button:hover,
-.reset-button:focus {
-
-
+.reset-button:hover, .reset-button:focus {
     background-color: #333;
-
 }
-
-/* ==========================================================
-   FOOTER
-   ========================================================== */
-
 
 footer {
-
     width: 100%;
-
-
-    margin-top: auto;
-
-
     padding: 20px;
-
-
     text-align: center;
-
-
     background-color: #efefef;
-
-
     border-top: 2px solid #ccc;
-
 }
 
-
-
 /* ==========================================================
-   TABLET DESIGN
-   Screens 768px and larger
+   TABLET & DESKTOP DESIGN (Screens 768px and larger)
    ========================================================== */
-
-
 @media screen and (min-width:768px) {
-
-
-
     main {
-
         padding: 25px;
-
     }
-    /* Horizontal navigation */
 
+    /* Expands navigation bar horizontally */
     .w3-bar {
-
-
         flex-direction: row;
-
-
         justify-content: center;
-
-
-        flex-wrap: wrap;
-
-
     }
-
-
 
     .w3-bar .w3-button {
-
-
-        width: auto;
-
-
         padding: 15px 20px;
-
     }
-
-    /* Larger cards */
-
-    .card {
-
-
-        max-width: 350px;
-
-    }
-
-
-
-
-
-    /* Quiz buttons side-by-side */
 
     .form-actions {
-
-
         flex-direction: row;
-
-
         justify-content: center;
-
     }
-
-
 
     .form-actions button {
-
-
         width: auto;
-
-
         min-width: 180px;
-
     }
-
-
-
-
-
-    /* Image sizes */
-
-    .history-image {
-
-
-        max-width: 250px;
-
-
-    }
-
-
-
-    .tech-image {
-
-
-        max-width: 500px;
-
-
-    }
-
-
-
-    .about-image {
-
-
-        max-width: 300px;
-
-
-    }
-
-
 }
 
-
-
-
-
 /* ==========================================================
-   LARGE DESKTOP DESIGN
-   Screens 1200px and larger
+   LARGE DESKTOP DESIGN (Screens 1200px and larger)
    ========================================================== */
-
-
 @media screen and (min-width:1200px) {
-
-
-
-    body {
-
-
-        font-size: 18px;
-
-    }
-
-
-
-
-
-    main {
-
-
-        max-width: 1200px;
-
-    }
-
-
-
-
-
-    .hero {
-
-
-        min-height: 500px;
-
-    }
-
-
-
-
-
-    .hero-text {
-
-
-        padding: 40px;
-
-    }
-
-
-
-
-
-    .flex-section {
-
-
-        gap: 30px;
-
-    }
-
-
-
-
-
-    .card {
-
-
-        max-width: 360px;
-
-    }
-
-
-
-
-
-    h1 {
-
-
-        font-size: 42px;
-
-    }
-
-
+    body { font-size: 18px; }
+    .hero { min-height: 500px; }
+    .hero-text { padding: 40px; }
+    h1 { font-size: 42px; }
 }
