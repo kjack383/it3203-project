@@ -1,7 +1,10 @@
 /* ==========================================
    GLOBAL & LAYOUT BASE STYLES (Mobile-First)
    ========================================== */
-
+/* Apply consistent sizing */
+* {
+    box-sizing: border-box;
+}
 html, body {
     height: 100%;
 }
@@ -101,13 +104,22 @@ a:hover {
     font-weight: bold;
 }
 
-.hero-button {
+  .hero-button {
     display: inline-block;
     margin-top: 15px;
     padding: 12px 24px;
     background: #1f3c88;
     color: white;
+    border: none;
     border-radius: 6px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+.hero-button:hover {
+    background: #17306e;
+}
 }
 
 /* ==========================================
@@ -122,14 +134,15 @@ a:hover {
 }
 
 .card {
-    width: 100%; /* Cards take full width on mobile screens */
-    max-width: 340px; /* Prevents cards from getting too wide */
+    width: 100%;
+    max-width: 340px;
+    flex: 1 1 300px;
     background: white;
     border: 2px solid #ddd;
     border-radius: 10px;
     padding: 20px;
     box-shadow: 0 3px 8px rgba(0,0,0,.15);
-    box-sizing: border-box;
+}
 }
 
 /* ==========================================
@@ -178,6 +191,7 @@ th {
    ELEMENT 4: QUIZ FORM AND CONTROLS
    ========================================== */
 .quiz-container {
+    width: 100%;
     max-width: 900px;
     margin: auto;
     padding: 15px;
@@ -189,6 +203,17 @@ th {
     padding: 20px;
     margin: 20px 0;
     box-shadow: 0 3px 8px rgba(0,0,0,.15);
+}
+/* Responsive button layout */
+.form-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.form-actions button {
+    width: 100%;
 }
 
 .quiz-card input[type="text"] {
@@ -224,14 +249,18 @@ th {
 .fail { color: red; }
 
 .reset-button {
-    margin: 20px 0;
-    width: 100%; /* Stacks nicely under submission paths on phone dimensions */
     padding: 12px 24px;
     background: #555;
     color: white;
     border: none;
     border-radius: 6px;
     cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.reset-button:hover {
+    background: #333;
+}
 }
 
 /* Footer Layout Base */
@@ -242,44 +271,64 @@ footer {
     background: #efefef;
     border-top: 2px solid #ccc;
 }
+@media screen and (min-width:768px){
 
-
-/* ==========================================
-   DESKTOP STYLES (Screens 768px and wider)
-   ========================================== */
-@media screen and (min-width: 768px) {
-    body {
-        padding-top: 90px; /* Reduces body top offset since navigation shifts horizontal */
+    body{
+        padding-top:90px;
     }
 
-    main {
-        padding: 20px;
+    main{
+        padding:20px;
     }
 
-    h1 {
-        font-size: 32px;
+    h1{
+        font-size:32px;
     }
 
-    /* Element 1: Desktop Horizontal Navigation Row Layout */
-    .w3-bar {
-        flex-direction: row;
-        justify-content: center;
-        padding: 0;
+    /* Horizontal navigation */
+    .w3-bar{
+        flex-direction:row;
+        justify-content:center;
+        flex-wrap:wrap;
+        padding:0;
     }
 
-    .w3-bar .w3-button {
-        width: auto; /* Reverts default layout flow widths */
-        padding: 15px 20px;
+    .w3-bar .w3-button{
+        width:auto;
+        padding:15px 20px;
     }
 
-    /* Set exact image bounding dimensions where spacing is available on desktop */
-    .history-image { width: 250px; height: 160px; object-fit: cover; }
-    .tech-image { width: 500px; height: auto; }
-    .about-image { width: 300px; height: auto; }
-
-    /* Form Buttons Grid Row adjustment */
-    .reset-button {
-        width: auto;
-        margin-left: 15px;
+    /* Desktop cards */
+    .card{
+        max-width:350px;
     }
+
+    /* Desktop images */
+    .history-image{
+        width:250px;
+        height:160px;
+        object-fit:cover;
+    }
+
+    .tech-image{
+        width:500px;
+        height:auto;
+    }
+
+    .about-image{
+        width:300px;
+        height:auto;
+    }
+
+    /* Quiz buttons */
+    .form-actions{
+        flex-direction:row;
+        justify-content:center;
+    }
+
+    .form-actions button{
+        width:auto;
+        min-width:180px;
+    }
+
 }
