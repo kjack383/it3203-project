@@ -120,8 +120,6 @@ a:hover {
 .hero-button:hover {
     background: #17306e;
 }
-}
-
 /* ==========================================
    FLEXBOX & ELEMENT CONTAINER CARDS
    ========================================== */
@@ -142,7 +140,6 @@ a:hover {
     border-radius: 10px;
     padding: 20px;
     box-shadow: 0 3px 8px rgba(0,0,0,.15);
-}
 }
 
 /* ==========================================
@@ -261,8 +258,6 @@ th {
 .reset-button:hover {
     background: #333;
 }
-}
-
 /* Footer Layout Base */
 footer {
     margin-top: auto;
