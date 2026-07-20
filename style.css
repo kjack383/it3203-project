@@ -132,10 +132,6 @@ a:focus {
         background-color 0.3s ease,
         color 0.3s ease;
 }
-
-}
-
-
 /* Hover and keyboard accessibility */
 .w3-bar .w3-button:hover,
 .w3-bar .w3-button:focus {
@@ -145,8 +141,6 @@ a:focus {
     color: white !important;
 
 }
-
-
 /* ==========================================================
    HERO SECTION
    ========================================================== */
@@ -175,9 +169,6 @@ a:focus {
     padding: 20px;
 
 }
-
-
-
 /* Hero text box */
 
 .hero-text {
@@ -206,9 +197,6 @@ a:focus {
         0 4px 12px rgba(0,0,0,0.15);
 
 }
-
-
-
 /* Hero heading */
 
 .hero-title {
@@ -222,9 +210,6 @@ a:focus {
     font-size: clamp(28px, 6vw, 48px);
 
 }
-
-
-
 /* Hero button */
 
 .hero-button {
@@ -261,9 +246,6 @@ a:focus {
         transform 0.2s ease;
 
 }
-
-
-
 .hero-button:hover,
 .hero-button:focus {
 
@@ -294,9 +276,6 @@ a:focus {
     padding: 20px 0;
 
 }
-
-
-
 /* Individual content cards */
 
 .card {
@@ -330,9 +309,6 @@ a:focus {
         transform 0.3s ease;
 
 }
-
-
-
 .card:hover {
 
     transform: translateY(-5px);
@@ -344,9 +320,6 @@ a:focus {
 /* ==========================================================
    ELEMENT 3: RESPONSIVE IMAGES
    ========================================================== */
-
-
-
 img {
 
     max-width: 100%;
@@ -367,9 +340,6 @@ img {
     margin: 10px auto;
 
 }
-
-
-
 /* All article images */
 
 .history-image,
@@ -391,14 +361,9 @@ img {
     margin: 20px auto;
 
 }
-
-
-
 /* ==========================================================
    RESPONSIVE TABLES
    ========================================================== */
-
-
 /*
    Wrapper allows horizontal scrolling
    on small phone screens
@@ -419,8 +384,6 @@ img {
 
 }
 
-
-
 table {
 
     width: 100%;
@@ -432,8 +395,6 @@ table {
     border-collapse: collapse;
 
 }
-
-
 
 th,
 td {
@@ -448,8 +409,6 @@ td {
 
 }
 
-
-
 th {
 
     background-color: #1f3c88;
@@ -458,9 +417,6 @@ th {
     color: white;
 
 }
-
-
-
 
 /* ==========================================================
    ELEMENT 4: QUIZ FORM DESIGN
@@ -482,9 +438,6 @@ th {
     padding: 15px;
 
 }
-
-
-
 .quiz-card {
 
     background-color: white;
@@ -529,8 +482,6 @@ th {
     margin-top: 10px;
 
 }
-
-
 
 /* Quiz labels */
 
@@ -577,15 +528,9 @@ th {
 
 
 }
-
-
-
 /* ==========================================================
    QUIZ BUTTONS
    ========================================================== */
-
-
-
 .form-actions {
 
 
@@ -617,8 +562,6 @@ th {
 
 
 }
-
-
 
 /* Results */
 
@@ -686,8 +629,6 @@ th {
 
 }
 
-
-
 .reset-button:hover,
 .reset-button:focus {
 
@@ -739,9 +680,6 @@ footer {
         padding: 25px;
 
     }
-
-
-
     /* Horizontal navigation */
 
     .w3-bar {
@@ -769,10 +707,6 @@ footer {
         padding: 15px 20px;
 
     }
-
-
-
-
 
     /* Larger cards */
 
