@@ -32,14 +32,22 @@
         </p>
 
         <!-- Form Wrapped cleanly for Mobile-First styling layouts -->
-        <form id="quizForm">
+        <form id="quizForm" autocomplete="off">
 
             <!-- Question 1 -->
             <div class="quiz-card">
-                <h2>1. Fill in the Blank</h2>
-                <p>The first major computer network that became the foundation of the Internet was called ______.</p>
-                <input type="text" id="q1" placeholder="Type your answer here...">
-            </div>
+    <h2>1. Fill in the Blank</h2>
+
+    <p>The first major computer network that became the foundation of the Internet was called ______.</p>
+
+    <label for="q1">Answer:</label>
+
+    <input
+        type="text"
+        id="q1"
+        placeholder="Type your answer here..."
+        required>
+</div>
 
             <!-- Question 2 -->
             <div class="quiz-card">
@@ -112,8 +120,8 @@
 
         </form>
 
-        <!-- Container for JS Results Display -->
-        <div id="results"></div>
+        <!-- Quiz Results -->
+      <section id="results" aria-live="polite"></section>
 
     </main>
 
