@@ -2,93 +2,56 @@
 <html lang="en">
 
 <head>
-<title>About</title>
-
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
-<link rel="stylesheet" href="style.css">
-
+    <title>About</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<!-- NAVIGATION -->
-<div class="w3-bar w3-blue w3-card">
+    <!-- CLEANED NAVIGATION BAR (Matches index.html) -->
+    <nav class="w3-bar w3-card">
+        <a href="index.html" class="w3-button">Home</a>
+        <a href="history.html" class="w3-button">History</a>
+        <a href="technologies.html" class="w3-button">Technologies</a>
+        <a href="concepts.html" class="w3-button">Concepts</a>
+        <a href="references.html" class="w3-button">References</a>
+        <a href="about.html" class="w3-button">About</a>
+        <a href="quiz.html" class="w3-button">Quiz</a>
+    </nav>
 
-<a href="index.html" class="w3-bar-item w3-button">Home</a>
-<a href="history.html" class="w3-bar-item w3-button">History</a>
-<a href="technologies.html" class="w3-bar-item w3-button">Technologies</a>
-<a href="concepts.html" class="w3-bar-item w3-button">Concepts</a>
-<a href="references.html" class="w3-bar-item w3-button">References</a>
-<a href="about.html" class="w3-bar-item w3-button">About</a>
-<a href="quiz.html" class="w3-bar-item w3-button">Quiz</a>
-</div>
+    <!-- MAIN CONTENT -->
+    <main>
 
+        <h1 id="main-title">About Me & This Project</h1>
 
-<!-- MAIN CONTENT -->
-<main class="w3-container">
+        <!-- FLEX LAYOUT -->
+        <div class="flex-section">
+            
+            <div class="card">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" alt="JavaScript Logo" class="about-image">
+                <h2>Student Information</h2>
+                <p>My name is Kimora Jackson. I am an Information Technology student at Kennesaw State University.</p>
+                <p>I am interested in web development, networking systems, and enterprise technology.</p>
+            </div>
 
-<h1 id="main-title" class="w3-center">
-About Me & This Project
-</h1>
+            <div class="card">
+                <h2>About This Project</h2>
+                <p>This website was created for IT 3203 Web Development. It demonstrates the evolution of the Internet, key technologies, and foundational web concepts.</p>
+                <p>The project uses HTML, CSS, Flexbox layout, and multiple web pages connected through navigation.</p>
+            </div>
 
+        </div>
 
-<!-- FLEX LAYOUT -->
-<div class="flex-section">
+    </main>
 
-    <div class="card">
-
-        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png"
-            alt="JavaScript Logo"
-            class="about-image">
-
-        <h2>Student Information</h2>
-
-        <p>
-            My name is Kimora Jackson. I am an Information Technology student at Kennesaw State University.
-        </p>
-
-        <p>
-            I am interested in web development, networking systems, and enterprise technology.
-        </p>
-
-    </div>
-
-
-    <div class="card">
-
-        <h2>About This Project</h2>
-
-        <p>
-            This website was created for IT 3203 Web Development. It demonstrates the evolution of the Internet,
-            key technologies, and foundational web concepts.
-        </p>
-
-        <p>
-            The project uses HTML, CSS, Flexbox layout, and multiple web pages connected through navigation.
-        </p>
-
-    </div>
-
-
-</div>
-
-</main>
-
-
-<!-- FOOTER -->
-<footer>
-
-<p>This is a class project for IT3203</p>
-
-<p>
-<a href="https://ksuweb.github.io/IT3203/">Course Website</a>
-</p>
-
-</footer>
-
+    <!-- FOOTER -->
+    <footer>
+        <p>This is a class project for IT 3203</p>
+        <p><a href="https://ksuweb.github.io/IT3203/">Course Website</a></p>
+    </footer>
 
 </body>
 </html>
