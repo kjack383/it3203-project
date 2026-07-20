@@ -9,7 +9,7 @@ html, body {
     height: 100%;
 }
 
-body {
+   body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -17,7 +17,8 @@ body {
     font-family: Arial, sans-serif;
     background: #f4f6f9;
     color: #333;
-    padding-top: 260px; /* Increased to prevent fixed mobile menu from covering headers */
+    padding-top: 0;
+
 }
 
 main {
