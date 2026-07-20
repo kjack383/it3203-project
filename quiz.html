@@ -2,248 +2,124 @@
 <html lang="en">
 
 <head>
-
-<title>Internet Evolution Quiz</title>
-
-<meta charset="UTF-8">
-
-<meta name="viewport" content="width=device-width, initial-scale=1">
-
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
-
-<link rel="stylesheet" href="style.css">
-
-<script src="script.js" defer></script>
-
+    <title>Internet Evolution Quiz</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
-
 
 <body>
 
+    <!-- Navigation -->
+    <div class="w3-bar w3-blue w3-card w3-top">
+        <a href="index.html" class="w3-bar-item w3-button">Home</a>
+        <a href="history.html" class="w3-bar-item w3-button">History</a>
+        <a href="technologies.html" class="w3-bar-item w3-button">Technologies</a>
+        <a href="concepts.html" class="w3-bar-item w3-button">Concepts</a>
+        <a href="references.html" class="w3-bar-item w3-button">References</a>
+        <a href="about.html" class="w3-bar-item w3-button">About</a>
+        <a href="quiz.html" class="w3-bar-item w3-button">Quiz</a>
+    </div>
+
+    <!-- Main Responsive Container -->
+    <main class="quiz-container">
+
+        <h1>Internet Evolution Quiz</h1>
+        <p class="page-intro">
+            Test your knowledge about the history, technologies, and concepts behind the Internet.
+        </p>
+
+        <!-- Form Wrapped cleanly for Mobile-First styling layouts -->
+        <form id="quizForm">
+
+            <!-- Question 1 -->
+            <div class="quiz-card">
+                <h2>1. Fill in the Blank</h2>
+                <p>The first major computer network that became the foundation of the Internet was called ______.</p>
+                <input type="text" id="q1" placeholder="Type your answer here...">
+            </div>
+
+            <!-- Question 2 -->
+            <div class="quiz-card">
+                <h2>2. Multiple Choice</h2>
+                <p>Which protocol became the standard for Internet communication in 1983?</p>
+                <label>
+                    <input type="radio" name="q2" value="TCP/IP"> TCP/IP
+                </label>
+                <label>
+                    <input type="radio" name="q2" value="HTML"> HTML
+                </label>
+                <label>
+                    <input type="radio" name="q2" value="DNS"> DNS
+                </label>
+            </div>
+
+            <!-- Question 3 -->
+            <div class="quiz-card">
+                <h2>3. Multiple Choice</h2>
+                <p>Who created the World Wide Web?</p>
+                <label>
+                    <input type="radio" name="q3" value="Tim Berners-Lee"> Tim Berners-Lee
+                </label>
+                <label>
+                    <input type="radio" name="q3" value="Bill Gates"> Bill Gates
+                </label>
+                <label>
+                    <input type="radio" name="q3" value="Steve Jobs"> Steve Jobs
+                </label>
+            </div>
+
+            <!-- Question 4 -->
+            <div class="quiz-card">
+                <h2>4. Multiple Choice</h2>
+                <p>Which language is used to structure webpages?</p>
+                <label>
+                    <input type="radio" name="q4" value="HTML"> HTML
+                </label>
+                <label>
+                    <input type="radio" name="q4" value="CSS"> CSS
+                </label>
+                <label>
+                    <input type="radio" name="q4" value="Python"> Python
+                </label>
+            </div>
+
+            <!-- Question 5 -->
+            <div class="quiz-card">
+                <h2>5. Select All Correct Answers</h2>
+                <p>Which technologies are related to modern Internet development?</p>
+                <label>
+                    <input type="checkbox" name="q5" value="HTML"> HTML
+                </label>
+                <label>
+                    <input type="checkbox" name="q5" value="CSS"> CSS
+                </label>
+                <label>
+                    <input type="checkbox" name="q5" value="JavaScript"> JavaScript
+                </label>
+                <label>
+                    <input type="checkbox" name="q5" value="Calculator"> Calculator
+                </label>
+            </div>
+
+            <!-- Form Submissions Actions Wrapper for Responsive Alignment -->
+            <div class="form-actions">
+                <button type="submit" class="hero-button">Submit Quiz</button>
+                <button type="reset" class="reset-button">Retake Quiz</button>
+            </div>
+
+        </form>
+
+        <!-- Container for JS Results Display -->
+        <div id="results"></div>
 
-<div class="w3-bar w3-blue w3-card w3-top">
+    </main>
 
-<a href="index.html" class="w3-bar-item w3-button">Home</a>
-<a href="history.html" class="w3-bar-item w3-button">History</a>
-<a href="technologies.html" class="w3-bar-item w3-button">Technologies</a>
-<a href="concepts.html" class="w3-bar-item w3-button">Concepts</a>
-<a href="references.html" class="w3-bar-item w3-button">References</a>
-<a href="about.html" class="w3-bar-item w3-button">About</a>
-<a href="quiz.html" class="w3-bar-item w3-button">Quiz</a>
-
-</div>
-
-
-
-<main class="quiz-container">
-
-
-<h1>Internet Evolution Quiz</h1>
-
-<p class="page-intro">
-Test your knowledge about the history, technologies, and concepts behind the Internet.
-</p>
-
-
-
-<form id="quizForm">
-
-
-
-<div class="quiz-card">
-
-<h2>1. Fill in the Blank</h2>
-
-<p>
-The first major computer network that became the foundation of the Internet was called ______.
-</p>
-
-<input type="text" id="q1">
-
-</div>
-
-
-
-
-<div class="quiz-card">
-
-<h2>2. Multiple Choice</h2>
-
-<p>
-Which protocol became the standard for Internet communication in 1983?
-</p>
-
-<label>
-<input type="radio" name="q2" value="TCP/IP">
-TCP/IP
-</label>
-
-<br>
-
-<label>
-<input type="radio" name="q2" value="HTML">
-HTML
-</label>
-
-<br>
-
-<label>
-<input type="radio" name="q2" value="DNS">
-DNS
-</label>
-
-</div>
-
-
-
-
-<div class="quiz-card">
-
-<h2>3. Multiple Choice</h2>
-
-<p>
-Who created the World Wide Web?
-</p>
-
-
-<label>
-<input type="radio" name="q3" value="Tim Berners-Lee">
-Tim Berners-Lee
-</label>
-
-<br>
-
-<label>
-<input type="radio" name="q3" value="Bill Gates">
-Bill Gates
-</label>
-
-<br>
-
-<label>
-<input type="radio" name="q3" value="Steve Jobs">
-Steve Jobs
-</label>
-
-
-</div>
-
-
-
-
-<div class="quiz-card">
-
-<h2>4. Multiple Choice</h2>
-
-<p>
-Which language is used to structure webpages?
-</p>
-
-
-<label>
-<input type="radio" name="q4" value="HTML">
-HTML
-</label>
-
-<br>
-
-<label>
-<input type="radio" name="q4" value="CSS">
-CSS
-</label>
-
-<br>
-
-<label>
-<input type="radio" name="q4" value="Python">
-Python
-</label>
-
-
-</div>
-
-
-
-
-
-<div class="quiz-card">
-
-<h2>5. Select All Correct Answers</h2>
-
-<p>
-Which technologies are related to modern Internet development?
-</p>
-
-
-<label>
-<input type="checkbox" name="q5" value="HTML">
-HTML
-</label>
-
-<br>
-
-
-<label>
-<input type="checkbox" name="q5" value="CSS">
-CSS
-</label>
-
-
-<br>
-
-<label>
-<input type="checkbox" name="q5" value="JavaScript">
-JavaScript
-</label>
-
-
-<br>
-
-<label>
-<input type="checkbox" name="q5" value="Calculator">
-Calculator
-</label>
-
-
-
-</div>
-
-
-
-
-<button type="submit" class="hero-button">
-Submit Quiz
-</button>
-
-
-<button type="reset" class="reset-button">
-Retake Quiz
-</button>
-
-
-
-</form>
-
-
-
-<div id="results"></div>
-
-
-
-</main>
-
-
-
-
-<footer>
-
-<p>
-IT 3203 Web Development Project
-</p>
-
-</footer>
-
-
+    <footer>
+        <p>IT 3203 Web Development Project</p>
+    </footer>
 
 </body>
 </html>
