@@ -57,25 +57,21 @@ a:hover, a:focus {
 /* ==========================================================
    NAVIGATION MENU (Fixed and Restored)
    ========================================================== */
+/* Navigation Menu */
 .w3-bar {
-    display: flex;
-    flex-direction: column; /* Mobile first: stacked */
-    background-color: #1f3c88 !important; 
+    display: flex !important;
+    flex-wrap: wrap;
+    flex-direction: row !important;
+    justify-content: center;
+    background-color: #1f3c88 !important;
     width: 100%;
 }
 
 .w3-bar .w3-button {
+    display: block !important;
+    color: white !important;
+    padding: 14px 16px;
     text-align: center;
-    padding: 14px 10px;
-    color: white !important; 
-    font-weight: bold;
-    display: block; /* Ensures hitboxes fill the screen */
-    transition: background-color 0.3s ease;
-}
-
-.w3-bar .w3-button:hover,
-.w3-bar .w3-button:focus {
-    background-color: #3d5ea8 !important;
 }
 
 /* ==========================================================
