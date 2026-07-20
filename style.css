@@ -22,6 +22,7 @@ body {
 
 
 /* Main page styling */
+/* Main page styling */
 body {
     display: flex;
     flex-direction: column;
@@ -35,8 +36,10 @@ body {
     color: #333;
 
     line-height: 1.6;
+    
+    /* ADD THIS LINE BELOW to push the page content down past the fixed navigation menu */
+    padding-top: 80px; 
 }
-
 
 /* ==========================================================
    PAGE CONTENT LAYOUT
