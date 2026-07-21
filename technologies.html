@@ -1,61 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <title>Technologies</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
-    <link rel="stylesheet" href="style.css">
+<title>Technologies</title>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+<link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
 
-    <!-- CLEANED NAVIGATION BAR (Matches index.html) -->
-  <nav class="w3-bar w3-card w3-mobile">
+<!-- Navigation Bar -->
+<div class="w3-bar w3-white w3-card w3-top">
 
-    <a href="index.html" class="w3-button">Home</a>
-    <a href="history.html" class="w3-button">History</a>
-    <a href="technologies.html" class="w3-button">Technologies</a>
-    <a href="concepts.html" class="w3-button">Concepts</a>
-    <a href="references.html" class="w3-button">References</a>
-    <a href="about.html" class="w3-button">About</a>
-    <a href="quiz.html" class="w3-button">Quiz</a>
-</nav>
+  <a href="index.html" class="w3-bar-item w3-button">Home</a>
+  <a href="history.html" class="w3-bar-item w3-button">History</a>
+  <a href="technologies.html" class="w3-bar-item w3-button">Technologies</a>
+  <a href="concepts.html" class="w3-bar-item w3-button">Concepts</a>
+  <a href="references.html" class="w3-bar-item w3-button">References</a>
+  <a href="about.html" class="w3-bar-item w3-button">About</a>
+  <a href="quiz.html" class="w3-bar-item w3-button">Quiz</a>
+
+</div>
 
 
-    <!-- MAIN CONTENT -->
-    <main>
+<!-- Page Content -->
+<main class="w3-container">
 
-        <h1 style="text-align: center;">Web Technologies</h1>
+<h1 class="w3-center">Web Technologies</h1>
 
-        <div class="flex-section">
-            
-            <div class="card">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/Cloud_computing.svg" class="tech-image" alt="Cloud Computing">
-                <h2>HTML, CSS, and JavaScript</h2>
-                <p>HTML structures websites by organizing content on a webpage.</p>
-                <p>CSS controls the appearance and layout of websites.</p>
-                <p>JavaScript adds interactive features and dynamic behavior.</p>
-            </div>
+<div class="w3-card w3-white w3-padding w3-margin">
 
-            <div class="card">
-                <h2>Cloud Computing</h2>
-                <p>Cloud computing allows applications, storage, and services to run through internet-based systems.</p>
-            </div>
+<img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/Cloud_computing.svg"
+class="tech-image"
+alt="☁️ Cloud Computing">
 
-        </div>
+<h2>HTML, CSS, and JavaScript</h2>
 
-    </main>
+<p>
+HTML structures websites by organizing content on a webpage.
+</p>
 
-    <!-- FOOTER -->
-    <footer>
-        <p>This is a class project for IT 3203</p>
-        <p>
-            <a href="https://ksuweb.github.io/IT3203/" target="_blank">
-                Course Website
-            </a>
-        </p>
-    </footer>
+<p>
+CSS controls the appearance and layout of websites.
+</p>
 
+<p>
+JavaScript adds interactive features and dynamic behavior.
+</p>
+
+</div>
+
+
+<div class="w3-card w3-white w3-padding w3-margin">
+
+
+<h2>☁️ Cloud Computing</h2>
+
+<p>
+Cloud computing allows applications, storage, and services to run through internet-based systems.
+</p>
+
+</div>
+
+
+<section class="card" style="max-width:900px;margin:30px auto;">
+<h2>Why Cloud Computing Matters</h2>
+<ul>
+<li>Scalable resources on demand</li>
+<li>Lower infrastructure costs</li>
+<li>Supports AI, streaming, and collaboration</li>
+<li>Examples: AWS, Microsoft Azure, Google Cloud</li>
+</ul>
+</section></main>
+
+
+<script src="script.js"></script>
 </body>
+
 </html>
